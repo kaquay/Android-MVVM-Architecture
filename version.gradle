@@ -1,0 +1,34 @@
+ext {
+    archXVersion = "2.0.0"
+    supportXVersion = "1.1.0-alpha01"
+    androidx = [:]
+    androidx.appcompat = "androidx.appcompat:appcompat:$supportXVersion"
+    androidx.recyclerview = "androidx.recyclerview:recyclerview:$supportXVersion"
+    androidx.material = "com.google.android.material:material:$supportXVersion"
+    androidx.supportv4 = "androidx.legacy:legacy-support-v4:$supportXVersion"
+
+    lifecycle = [:]
+    lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$archXVersion"
+    lifecycle.compiler = "androidx.lifecycle:lifecycle-compiler:$archXVersion"
+    lifecycle.reactive_streams = "androidx.lifecycle:lifecycle-reactivestreams:$archXVersion"
+    androidx.lifecycle = lifecycle
+
+
+    dagger2Version = "2.16"
+    dagger = [:]
+    dagger.dagger = "com.google.dagger:dagger-android:$dagger2Version"
+    dagger.support = "com.google.dagger:dagger-android-support:$dagger2Version"
+    dagger.compiler = "com.google.dagger:dagger-compiler:$dagger2Version"
+    dagger.processor = "com.google.dagger:dagger-android-processor:$dagger2Version"
+
+
+    // rx
+    rxJava2Version = "2.2.3"
+    rxJava2AndroidVersion = "2.1.0"
+    rxJava2KotlinVersion = "2.1.0"
+
+    reactivex = [:]
+    reactivex.rxjava = "io.reactivex.rxjava2:rxjava:$rxJava2Version"
+    reactivex.rxandroid = "io.reactivex.rxjava2:rxandroid:$rxJava2AndroidVersion"
+    reactivex.rxkotlin = "io.reactivex.rxjava2:rxkotlin:$rxJava2KotlinVersion"
+}

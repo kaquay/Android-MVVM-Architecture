@@ -52,8 +52,9 @@ dependencies {
     api project(':base')
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha06'
-
+    implementation androidx.recyclerview
+    implementation androidx.cardview
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
 
 }
 repositories {

@@ -4,6 +4,7 @@ ext {
     androidx = [:]
     androidx.appcompat = "androidx.appcompat:appcompat:$supportXVersion"
     androidx.recyclerview = "androidx.recyclerview:recyclerview:$supportXVersion"
+    androidx.cardview = "androidx.cardview:cardview:1.0.0"
     androidx.material = "com.google.android.material:material:$supportXVersion"
     androidx.supportv4 = "androidx.legacy:legacy-support-v4:$supportXVersion"
 
@@ -31,4 +32,13 @@ ext {
     reactivex.rxjava = "io.reactivex.rxjava2:rxjava:$rxJava2Version"
     reactivex.rxandroid = "io.reactivex.rxjava2:rxandroid:$rxJava2AndroidVersion"
     reactivex.rxkotlin = "io.reactivex.rxjava2:rxkotlin:$rxJava2KotlinVersion"
+
+    // network
+    retrofitVersion = "2.4.0"
+    okHttpVersion = "3.10.0"
+    retrofit = [:]
+    retrofit.retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    retrofit.converter_gson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    retrofit.adapter_rxjava = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    okhttp3_logging_interceptor = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
 }

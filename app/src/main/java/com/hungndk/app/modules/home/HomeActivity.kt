@@ -19,7 +19,14 @@ class HomeActivity : BaseActivity<HomeViewModel>() {
         val viewModel = provideViewModel()
 
         viewModel.stateObser.observe(this, Observer {
-
+            when(it){
+                is HomeViewModel.State.Display -> {
+                    // nothing now
+                }
+                is HomeViewModel.State.Error -> {
+                    // show error
+                }
+            }
         })
 
         viewModel.loadAllPost()

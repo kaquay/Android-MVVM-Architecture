@@ -21,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -45,4 +49,11 @@ dependencies {
     api reactivex.rxjava
     api reactivex.rxandroid
     api reactivex.rxkotlin
+
+    //Retrofit
+    implementation retrofit.retrofit
+    implementation retrofit.converter_gson
+    implementation retrofit.adapter_rxjava
+    implementation okhttp3_logging_interceptor
+
 }

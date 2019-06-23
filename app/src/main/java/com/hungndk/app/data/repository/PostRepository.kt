@@ -11,6 +11,9 @@ class PostRepository @Inject constructor(
 ) {
     fun getAllPosts() = Observable.concat(
         localPostDataStore.getAllPost(),
-        cloudPostDataStore.getAllPost()
+        cloudPostDataStore.getAllPost().doAfterNext {
+            // save to local
+            localPostDataStore.saveAllPost(it)
+        }
     )
 }

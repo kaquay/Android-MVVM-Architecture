@@ -10,5 +10,9 @@ class LocalPostDataStore @Inject constructor() : PostDataStore() {
         return Observable.empty()
     }
 
+    fun saveAllPost(items: List<Post>) {
+        // do save
+    }
+
 
 }
